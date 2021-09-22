@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1、输入一个值，返回其数据类型** | 葡萄的文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="用于记录日常积累技术知识">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.795c385b.js" as="script"><link rel="preload" href="/assets/js/2.4869a1c6.js" as="script"><link rel="preload" href="/assets/js/53.7c5411bc.js" as="script"><link rel="prefetch" href="/assets/js/10.db0fde6c.js"><link rel="prefetch" href="/assets/js/11.fa25e993.js"><link rel="prefetch" href="/assets/js/12.9f8c4c1e.js"><link rel="prefetch" href="/assets/js/13.7faea134.js"><link rel="prefetch" href="/assets/js/14.101e7c88.js"><link rel="prefetch" href="/assets/js/15.d0585ceb.js"><link rel="prefetch" href="/assets/js/16.799f3f5e.js"><link rel="prefetch" href="/assets/js/17.7787591a.js"><link rel="prefetch" href="/assets/js/18.a1a82781.js"><link rel="prefetch" href="/assets/js/19.4f45110a.js"><link rel="prefetch" href="/assets/js/20.fead7896.js"><link rel="prefetch" href="/assets/js/21.d2aac77f.js"><link rel="prefetch" href="/assets/js/22.8d7440ee.js"><link rel="prefetch" href="/assets/js/23.2860274b.js"><link rel="prefetch" href="/assets/js/24.8b9bc53b.js"><link rel="prefetch" href="/assets/js/25.fccc6b33.js"><link rel="prefetch" href="/assets/js/26.97cfab7b.js"><link rel="prefetch" href="/assets/js/27.71a930bc.js"><link rel="prefetch" href="/assets/js/28.985eb8e5.js"><link rel="prefetch" href="/assets/js/29.093fb952.js"><link rel="prefetch" href="/assets/js/3.53a1bbc5.js"><link rel="prefetch" href="/assets/js/30.79d96789.js"><link rel="prefetch" href="/assets/js/31.77ba0bd8.js"><link rel="prefetch" href="/assets/js/32.f822cec7.js"><link rel="prefetch" href="/assets/js/33.a794b91d.js"><link rel="prefetch" href="/assets/js/34.b683acbe.js"><link rel="prefetch" href="/assets/js/35.e6f078ef.js"><link rel="prefetch" href="/assets/js/36.fb73c996.js"><link rel="prefetch" href="/assets/js/37.3b55d602.js"><link rel="prefetch" href="/assets/js/38.3df2d01b.js"><link rel="prefetch" href="/assets/js/39.81698bac.js"><link rel="prefetch" href="/assets/js/4.7b6dc275.js"><link rel="prefetch" href="/assets/js/40.b16418a2.js"><link rel="prefetch" href="/assets/js/41.405f4a12.js"><link rel="prefetch" href="/assets/js/42.06e502d0.js"><link rel="prefetch" href="/assets/js/43.f2e9139a.js"><link rel="prefetch" href="/assets/js/44.dd316946.js"><link rel="prefetch" href="/assets/js/45.1bf06147.js"><link rel="prefetch" href="/assets/js/46.15f590d4.js"><link rel="prefetch" href="/assets/js/47.7e5d787e.js"><link rel="prefetch" href="/assets/js/48.d5507499.js"><link rel="prefetch" href="/assets/js/49.39118ae0.js"><link rel="prefetch" href="/assets/js/5.a3c40de9.js"><link rel="prefetch" href="/assets/js/50.39061708.js"><link rel="prefetch" href="/assets/js/51.1e050f9a.js"><link rel="prefetch" href="/assets/js/52.1e8943d1.js"><link rel="prefetch" href="/assets/js/54.889ec3df.js"><link rel="prefetch" href="/assets/js/55.08264584.js"><link rel="prefetch" href="/assets/js/56.ab624d03.js"><link rel="prefetch" href="/assets/js/57.dfde85a9.js"><link rel="prefetch" href="/assets/js/58.9d533b84.js"><link rel="prefetch" href="/assets/js/59.cb22ba91.js"><link rel="prefetch" href="/assets/js/6.72ad7c85.js"><link rel="prefetch" href="/assets/js/60.e866ca2f.js"><link rel="prefetch" href="/assets/js/61.db4a1b55.js"><link rel="prefetch" href="/assets/js/62.024edf4a.js"><link rel="prefetch" href="/assets/js/63.8b8f4ffd.js"><link rel="prefetch" href="/assets/js/64.b53ab219.js"><link rel="prefetch" href="/assets/js/65.2a985240.js"><link rel="prefetch" href="/assets/js/7.3a9c0844.js"><link rel="prefetch" href="/assets/js/8.8bc3b23c.js"><link rel="prefetch" href="/assets/js/9.5728dbfb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">葡萄的文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="http://www.putao88.live/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/putao88/Document" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="http://www.putao88.live/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/putao88/Document" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端面试准备</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>常用知识点总结</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/常用知识点总结/1.常用的正则校验.html" class="sidebar-link">1.常用的正则校验</a></li><li><a href="/常用知识点总结/2.工作中常见问题.html" class="sidebar-link">2.工作中常见问题</a></li><li><a href="/常用知识点总结/3.常用JavaScript方法封装.html" class="active sidebar-link">3.常用JavaScript方法封装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_1、输入一个值-返回其数据类型" class="sidebar-link">1、输入一个值，返回其数据类型**</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_2、数组去重" class="sidebar-link">2、数组去重</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_3、字符串去重" class="sidebar-link">3、字符串去重</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_4、深拷贝-浅拷贝" class="sidebar-link">4、深拷贝 浅拷贝</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_5、reverse底层原理和扩展" class="sidebar-link">5、reverse底层原理和扩展</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_6、圣杯模式的继承" class="sidebar-link">6、圣杯模式的继承</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_7、找出字符串中第一次只出现一次的字母" class="sidebar-link">7、找出字符串中第一次只出现一次的字母</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_8、找元素的第n级父元素" class="sidebar-link">8、找元素的第n级父元素</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_9、-返回元素的第n个兄弟节点" class="sidebar-link">9、 返回元素的第n个兄弟节点</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_10、封装mychildren-解决浏览器的兼容问题" class="sidebar-link">10、封装mychildren，解决浏览器的兼容问题</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_11、判断元素有没有子元素" class="sidebar-link">11、判断元素有没有子元素</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_12、一个元素插入到另一个元素的后面" class="sidebar-link">12、一个元素插入到另一个元素的后面</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_13、返回当前的时间-年月日时分秒" class="sidebar-link">13、返回当前的时间（年月日时分秒）</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_14、获得滚动条的滚动距离" class="sidebar-link">14、获得滚动条的滚动距离</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_15、获得视口的尺寸" class="sidebar-link">15、获得视口的尺寸</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_16、获取任一元素的任意属性" class="sidebar-link">16、获取任一元素的任意属性</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_17、绑定事件的兼容代码" class="sidebar-link">17、绑定事件的兼容代码</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_18、解绑事件" class="sidebar-link">18、解绑事件</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_19、取消冒泡的兼容代码" class="sidebar-link">19、取消冒泡的兼容代码</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_20、检验字符串是否是回文" class="sidebar-link">20、检验字符串是否是回文</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_21、检验字符串是否是回文" class="sidebar-link">21、检验字符串是否是回文</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_22、兼容getelementsbyclassname方法" class="sidebar-link">22、兼容getElementsByClassName方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_23、运动函数" class="sidebar-link">23、运动函数</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_24、弹性运动" class="sidebar-link">24、弹性运动</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_25、封装自己的foreach方法" class="sidebar-link">25、封装自己的forEach方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_26、封装自己的filter方法" class="sidebar-link">26、封装自己的filter方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_27、数组map方法" class="sidebar-link">27、数组map方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_28、数组every方法" class="sidebar-link">28、数组every方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_29、数组reduce方法" class="sidebar-link">29、数组reduce方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_30、获取url中的参数" class="sidebar-link">30、获取url中的参数</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_31、数组排序" class="sidebar-link">31、数组排序</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_32、遍历dom树" class="sidebar-link">32、遍历Dom树</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_33、原生js封装ajax" class="sidebar-link">33、原生js封装ajax</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_34、异步加载script" class="sidebar-link">34、异步加载script</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_35、cookie管理" class="sidebar-link">35、cookie管理</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_36、实现bind-方法" class="sidebar-link">36、实现bind()方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_37、实现call-方法" class="sidebar-link">37、实现call()方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_38、实现apply-方法" class="sidebar-link">38、实现apply()方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_39、防抖" class="sidebar-link">39、防抖</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_40、节流" class="sidebar-link">40、节流</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_41、requestanimframe兼容性方法" class="sidebar-link">41、requestAnimFrame兼容性方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_42、cancelanimframe兼容性方法" class="sidebar-link">42、cancelAnimFrame兼容性方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_43、jsonp底层方法" class="sidebar-link">43、jsonp底层方法</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_44、获取url上的参数" class="sidebar-link">44、获取url上的参数</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_45、格式化时间" class="sidebar-link">45、格式化时间</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_46、验证邮箱的正则表达式" class="sidebar-link">46、验证邮箱的正则表达式</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_47、函数柯里化" class="sidebar-link">47、函数柯里化</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_48、大数相加" class="sidebar-link">48、大数相加</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_49、单例模式" class="sidebar-link">49、单例模式</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_50-排序-先进行某个对象属性排序-然后在此基础上进行另一个属性排序" class="sidebar-link">50. 排序，先进行某个对象属性排序，然后在此基础上进行另一个属性排序</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_51-多条件过滤" class="sidebar-link">51. 多条件过滤</a></li><li class="sidebar-sub-header"><a href="/常用知识点总结/3.常用JavaScript方法封装.html#_52-去掉属性值前后空格" class="sidebar-link">52.去掉属性值前后空格</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>NodeJS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ReactNative</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>WeChat</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>博客搭建</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>flutter</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>资源分享</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1、输入一个值-返回其数据类型"><a href="#_1、输入一个值-返回其数据类型" class="header-anchor">#</a> 1、输入一个值，返回其数据类型**</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function type(para) {
+    return Object.prototype.toString.call(para)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="_2、数组去重"><a href="#_2、数组去重" class="header-anchor">#</a> 2、数组去重</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function unique1(arr) {
+    return [...new Set(arr)]
+}
+
+function unique2(arr) {
+    var obj = {};
+    return arr.filter(ele =&gt; {
+        if (!obj[ele]) {
+            obj[ele] = true;
+            return true;
+        }
+    })
+}
+
+function unique3(arr) {
+    var result = [];
+    arr.forEach(ele =&gt; {
+        if (result.indexOf(ele) == -1) {
+            result.push(ele)
+        }
+    })
+    return result;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="_3、字符串去重"><a href="#_3、字符串去重" class="header-anchor">#</a> 3、字符串去重</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>String.prototype.unique = function () {
+    var obj = {},
+        str = '',
+        len = this.length;
+    for (var i = 0; i &lt; len; i++) {
+        if (!obj[this[i]]) {
+            str += this[i];
+            obj[this[i]] = true;
+        }
+    }
+    return str;
+}
+
+###### //去除连续的字符串 
+function uniq(str) {
+    return str.replace(/(\w)\1+/g, '$1')
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="_4、深拷贝-浅拷贝"><a href="#_4、深拷贝-浅拷贝" class="header-anchor">#</a> 4、深拷贝 浅拷贝</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>//深克隆（深克隆不考虑函数）
+function deepClone(obj, result) {
+    var result = result || {};
+    for (var prop in obj) {
+        if (obj.hasOwnProperty(prop)) {
+            if (typeof obj[prop] == 'object' &amp;&amp; obj[prop] !== null) {
+                // 引用值(obj/array)且不为null
+                if (Object.prototype.toString.call(obj[prop]) == '[object Object]') {
+                    // 对象
+                    result[prop] = {};
+                } else {
+                    // 数组
+                    result[prop] = [];
+                }
+                deepClone(obj[prop], result[prop])
+    } else {
+        // 原始值或func
+        result[prop] = obj[prop]
+    }
+  }
+}
+return result;
+}
+
+// 深浅克隆是针对引用值
+function deepClone(target) {
+    if (typeof (target) !== 'object') {
+        return target;
+    }
+    var result;
+    if (Object.prototype.toString.call(target) == '[object Array]') {
+        // 数组
+        result = []
+    } else {
+        // 对象
+        result = {};
+    }
+    for (var prop in target) {
+        if (target.hasOwnProperty(prop)) {
+            result[prop] = deepClone(target[prop])
+        }
+    }
+    return result;
+}
+
+// 无法复制函数
+var o1 = jsON.parse(jsON.stringify(obj1));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h2 id="_5、reverse底层原理和扩展"><a href="#_5、reverse底层原理和扩展" class="header-anchor">#</a> 5、reverse底层原理和扩展</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 改变原数组
+Array.prototype.myReverse = function () {
+    var len = this.length;
+    for (var i = 0; i &lt; len; i++) {
+        var temp = this[i];
+        this[i] = this[len - 1 - i];
+        this[len - 1 - i] = temp;
+    }
+    return this;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="_6、圣杯模式的继承"><a href="#_6、圣杯模式的继承" class="header-anchor">#</a> 6、圣杯模式的继承</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function inherit(Target, Origin) {
+    function F() {};
+    F.prototype = Origin.prototype;
+    Target.prototype = new F();
+    Target.prototype.constructor = Target;
+    // 最终的原型指向
+    Target.prop.uber = Origin.prototype;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_7、找出字符串中第一次只出现一次的字母"><a href="#_7、找出字符串中第一次只出现一次的字母" class="header-anchor">#</a> 7、找出字符串中第一次只出现一次的字母</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>String.prototype.firstAppear = function () {
+    var obj = {},
+        len = this.length;
+    for (var i = 0; i &lt; len; i++) {
+        if (obj[this[i]]) {
+            obj[this[i]]++;
+        } else {
+            obj[this[i]] = 1;
+        }
+    }
+    for (var prop in obj) {
+       if (obj[prop] == 1) {
+         return prop;
+       }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_8、找元素的第n级父元素"><a href="#_8、找元素的第n级父元素" class="header-anchor">#</a> 8、找元素的第n级父元素</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function parents(ele, n) {
+    while (ele &amp;&amp; n) {
+        ele = ele.parentElement ? ele.parentElement : ele.parentNode;
+        n--;
+    }
+    return ele;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="_9、-返回元素的第n个兄弟节点"><a href="#_9、-返回元素的第n个兄弟节点" class="header-anchor">#</a> 9、 返回元素的第n个兄弟节点</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function retSibling(e, n) {
+    while (e &amp;&amp; n) {
+        if (n &gt; 0) {
+            if (e.nextElementSibling) {
+                e = e.nextElementSibling;
+            } else {
+                for (e = e.nextSibling; e &amp;&amp; e.nodeType !== 1; e = e.nextSibling);
+            }
+            n--;
+        } else {
+            if (e.previousElementSibling) {
+                e = e.previousElementSibling;
+            } else {
+                for (e = e.previousElementSibling; e &amp;&amp; e.nodeType !== 1; e = e.previousElementSibling);
+            }
+            n++;
+        }
+    }
+    return e;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="_10、封装mychildren-解决浏览器的兼容问题"><a href="#_10、封装mychildren-解决浏览器的兼容问题" class="header-anchor">#</a> 10、封装mychildren，解决浏览器的兼容问题</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function myChildren(e) {
+    var children = e.childNodes,
+        arr = [],
+        len = children.length;
+    for (var i = 0; i &lt; len; i++) {
+        if (children[i].nodeType === 1) {
+            arr.push(children[i])
+        }
+    }
+    return arr;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="_11、判断元素有没有子元素"><a href="#_11、判断元素有没有子元素" class="header-anchor">#</a> 11、判断元素有没有子元素</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function hasChildren(e) {
+    var children = e.childNodes,
+        len = children.length;
+    for (var i = 0; i &lt; len; i++) {
+        if (children[i].nodeType === 1) {
+            return true;
+        }
+    }
+    return false;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="_12、一个元素插入到另一个元素的后面"><a href="#_12、一个元素插入到另一个元素的后面" class="header-anchor">#</a> 12、一个元素插入到另一个元素的后面</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Element.prototype.insertAfter = function (target, elen) {
+    var nextElen = elen.nextElenmentSibling;
+    if (nextElen == null) {
+        this.appendChild(target);
+    } else {
+        this.insertBefore(target, nextElen);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_13、返回当前的时间-年月日时分秒"><a href="#_13、返回当前的时间-年月日时分秒" class="header-anchor">#</a> 13、返回当前的时间（年月日时分秒）</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getDateTime() {
+    var date = new Date(),
+        year = date.getFullYear(),
+        month = date.getMonth() + 1,
+        day = date.getDate(),
+        hour = date.getHours() + 1,
+        minute = date.getMinutes(),
+        second = date.getSeconds();
+        month = checkTime(month);
+        day = checkTime(day);
+        hour = checkTime(hour);
+        minute = checkTime(minute);
+        second = checkTime(second);
+     function checkTime(i) {
+        if (i &lt; 10) {
+                i = &quot;0&quot; + i;
+       }
+      return i;
+    }
+    return &quot;&quot; + year + &quot;年&quot; + month + &quot;月&quot; + day + &quot;日&quot; + hour + &quot;时&quot; + minute + &quot;分&quot; + second + &quot;秒&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="_14、获得滚动条的滚动距离"><a href="#_14、获得滚动条的滚动距离" class="header-anchor">#</a> 14、获得滚动条的滚动距离</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getScrollOffset() {
+    if (window.pageXOffset) {
+        return {
+            x: window.pageXOffset,
+            y: window.pageYOffset
+        }
+    } else {
+        return {
+            x: document.body.scrollLeft + document.documentElement.scrollLeft,
+            y: document.body.scrollTop + document.documentElement.scrollTop
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="_15、获得视口的尺寸"><a href="#_15、获得视口的尺寸" class="header-anchor">#</a> 15、获得视口的尺寸</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getViewportOffset() {
+    if (window.innerWidth) {
+        return {
+            w: window.innerWidth,
+            h: window.innerHeight
+        }
+    } else {
+        // ie8及其以下
+        if (document.compatMode === &quot;BackCompat&quot;) {
+            // 怪异模式
+            return {
+                w: document.body.clientWidth,
+                h: document.body.clientHeight
+            }
+        } else {
+            // 标准模式
+            return {
+                w: document.documentElement.clientWidth,
+                h: document.documentElement.clientHeight
+            }
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="_16、获取任一元素的任意属性"><a href="#_16、获取任一元素的任意属性" class="header-anchor">#</a> 16、获取任一元素的任意属性</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getStyle(elem, prop) {
+    return window.getComputedStyle ? window.getComputedStyle(elem, null)[prop] : elem.currentStyle[prop]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="_17、绑定事件的兼容代码"><a href="#_17、绑定事件的兼容代码" class="header-anchor">#</a> 17、绑定事件的兼容代码</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function addEvent(elem, type, handle) {
+    if (elem.addEventListener) { //非ie和非ie9
+        elem.addEventListener(type, handle, false);
+    } else if (elem.attachEvent) { //ie6到ie8
+        elem.attachEvent('on' + type, function () {
+            handle.call(elem);
+        })
+    } else {
+        elem['on' + type] = handle;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="_18、解绑事件"><a href="#_18、解绑事件" class="header-anchor">#</a> 18、解绑事件</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function removeEvent(elem, type, handle) {
+    if (elem.removeEventListener) { //非ie和非ie9
+        elem.removeEventListener(type, handle, false);
+    } else if (elem.detachEvent) { //ie6到ie8
+        elem.detachEvent('on' + type, handle);
+    } else {
+        elem['on' + type] = null;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_19、取消冒泡的兼容代码"><a href="#_19、取消冒泡的兼容代码" class="header-anchor">#</a> 19、取消冒泡的兼容代码</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function stopBubble(e) {
+    if (e &amp;&amp; e.stopPropagation) {
+        e.stopPropagation();
+    } else {
+        window.event.cancelBubble = true;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="_20、检验字符串是否是回文"><a href="#_20、检验字符串是否是回文" class="header-anchor">#</a> 20、检验字符串是否是回文</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function isPalina(str) {
+    if (Object.prototype.toString.call(str) !== '[object String]') {
+        return false;
+    }
+    var len = str.length;
+    for (var i = 0; i &lt; len / 2; i++) {
+        if (str[i] != str[len - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="_21、检验字符串是否是回文"><a href="#_21、检验字符串是否是回文" class="header-anchor">#</a> 21、检验字符串是否是回文</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function isPalindrome(str) {
+    str = str.replace(/\W/g, '').toLowerCase();
+    console.log(str)
+    return (str == str.split('').reverse().join(''))
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_22、兼容getelementsbyclassname方法"><a href="#_22、兼容getelementsbyclassname方法" class="header-anchor">#</a> 22、兼容getElementsByClassName方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Element.prototype.getElementsByClassName = Document.prototype.getElementsByClassName = function (_className) {
+    var allDomArray = document.getElementsByTagName('*');
+    var lastDomArray = [];
+    function trimSpace(strClass) {
+        var reg = /\s+/g;
+        return strClass.replace(reg, ' ').trim()
+    }
+    for (var i = 0; i &lt; allDomArray.length; i++) {
+        var classArray = trimSpace(allDomArray[i].className).split(' ');
+        for (var j = 0; j &lt; classArray.length; j++) {
+            if (classArray[j] == _className) {
+                lastDomArray.push(allDomArray[i]);
+                break;
+            }
+        }
+    }
+    return lastDomArray;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="_23、运动函数"><a href="#_23、运动函数" class="header-anchor">#</a> 23、运动函数</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function animate(obj, json, callback) {
+    clearInterval(obj.timer);
+    var speed,
+        current;
+    obj.timer = setInterval(function () {
+        var lock = true;
+        for (var prop in json) {
+            if (prop == 'opacity') {
+                current = parseFloat(window.getComputedStyle(obj, null)[prop]) * 100;
+            } else {
+                current = parseInt(window.getComputedStyle(obj, null)[prop]);
+            }
+            speed = (json[prop] - current) / 7;
+            speed = speed &gt; 0 ? Math.ceil(speed) : Math.floor(speed);
+
+            if (prop == 'opacity') {
+                obj.style[prop] = (current + speed) / 100;
+            } else {
+                obj.style[prop] = current + speed + 'px';
+            }
+            if (current != json[prop]) {
+                lock = false;
+            }
+        }
+        if (lock) {
+            clearInterval(obj.timer);
+            typeof callback == 'function' ? callback() : '';
+        }
+    }, 30)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h2 id="_24、弹性运动"><a href="#_24、弹性运动" class="header-anchor">#</a> 24、弹性运动</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function ElasticMovement(obj, target) {
+    clearInterval(obj.timer);
+    var iSpeed = 40,
+        a, u = 0.8;
+    obj.timer = setInterval(function () {
+        a = (target - obj.offsetLeft) / 8;
+        iSpeed = iSpeed + a;
+        iSpeed = iSpeed * u;
+        if (Math.abs(iSpeed) &lt;= 1 &amp;&amp; Math.abs(a) &lt;= 1) {
+            console.log('over')
+            clearInterval(obj.timer);
+            obj.style.left = target + 'px';
+        } else {
+            obj.style.left = obj.offsetLeft + iSpeed + 'px';
+        }
+    }, 30);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="_25、封装自己的foreach方法"><a href="#_25、封装自己的foreach方法" class="header-anchor">#</a> 25、封装自己的forEach方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Array.prototype.myForEach = function (func, obj) {
+    var len = this.length;
+    var _this = arguments[1] ? arguments[1] : window;
+    // var _this=arguments[1]||window;
+    for (var i = 0; i &lt; len; i++) {
+        func.call(_this, this[i], i, this)
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_26、封装自己的filter方法"><a href="#_26、封装自己的filter方法" class="header-anchor">#</a> 26、封装自己的filter方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Array.prototype.myFilter = function (func, obj) {
+    var len = this.length;
+    var arr = [];
+    var _this = arguments[1] || window;
+    for (var i = 0; i &lt; len; i++) {
+        func.call(_this, this[i], i, this) &amp;&amp; arr.push(this[i]);
+    }
+    return arr;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_27、数组map方法"><a href="#_27、数组map方法" class="header-anchor">#</a> 27、数组map方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Array.prototype.myMap = function (func) {
+    var arr = [];
+    var len = this.length;
+    var _this = arguments[1] || window;
+    for (var i = 0; i &lt; len; i++) {
+        arr.push(func.call(_this, this[i], i, this));
+    }
+    return arr;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_28、数组every方法"><a href="#_28、数组every方法" class="header-anchor">#</a> 28、数组every方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Array.prototype.myEvery = function (func) {
+    var flag = true;
+    var len = this.length;
+    var _this = arguments[1] || window;
+    for (var i = 0; i &lt; len; i++) {
+        if (func.apply(_this, [this[i], i, this]) == false) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="_29、数组reduce方法"><a href="#_29、数组reduce方法" class="header-anchor">#</a> 29、数组reduce方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Array.prototype.myReduce = function (func, initialValue) {
+    var len = this.length,
+        nextValue,
+        i;
+    if (!initialValue) {
+        // 没有传第二个参数
+        nextValue = this[0];
+        i = 1;
+    } else {
+        // 传了第二个参数
+        nextValue = initialValue;
+        i = 0;
+    }
+    for (; i &lt; len; i++) {
+        nextValue = func(nextValue, this[i], i, this);
+    }
+    return nextValue;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="_30、获取url中的参数"><a href="#_30、获取url中的参数" class="header-anchor">#</a> 30、获取url中的参数</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getWindonHref() {
+    var sHref = window.location.href;
+    var args = sHref.split('?');
+    if (args[0] === sHref) {
+        return '';
+    }
+    var hrefarr = args[1].split('#')[0].split('&amp;');
+    var obj = {};
+    for (var i = 0; i &lt; hrefarr.length; i++) {
+        hrefarr[i] = hrefarr[i].split('=');
+        obj[hrefarr[i][0]] = hrefarr[i][1];
+    }
+    return obj;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="_31、数组排序"><a href="#_31、数组排序" class="header-anchor">#</a> 31、数组排序</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 快排 [left] + min + [right]
+function quickArr(arr) {
+    if (arr.length &lt;= 1) {
+        return arr;
+    }
+    var left = [],
+        right = [];
+    var pIndex = Math.floor(arr.length / 2);
+    var p = arr.splice(pIndex, 1)[0];
+    for (var i = 0; i &lt; arr.length; i++) {
+        if (arr[i] &lt;= p) {
+            left.push(arr[i]);
+        } else {
+            right.push(arr[i]);
+        }
+    }
+    // 递归
+    return quickArr(left).concat([p], quickArr(right));
+}
+
+// 冒泡
+function bubbleSort(arr) {
+    for (var i = 0; i &lt; arr.length - 1; i++) {
+        for (var j = i + 1; j &lt; arr.length; j++) {
+            if (arr[i] &gt; arr[j]) {
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
+function bubbleSort(arr) {
+    var len = arr.length;
+    for (var i = 0; i &lt; len - 1; i++) {
+        for (var j = 0; j &lt; len - 1 - i; j++) {
+            if (arr[j] &gt; arr[j + 1]) {
+                var temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h2 id="_32、遍历dom树"><a href="#_32、遍历dom树" class="header-anchor">#</a> 32、遍历Dom树</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 给定页面上的DOM元素,将访问元素本身及其所有后代(不仅仅是它的直接子元素)
+// 对于每个访问的元素，函数讲元素传递给提供的回调函数
+function traverse(element, callback) {
+    callback(element);
+    var list = element.children;
+    for (var i = 0; i &lt; list.length; i++) {
+        traverse(list[i], callback);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_33、原生js封装ajax"><a href="#_33、原生js封装ajax" class="header-anchor">#</a> 33、原生js封装ajax</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function ajax(method, url, callback, data, flag) {
+    var xhr;
+    flag = flag || true;
+    method = method.toUpperCase();
+    if (window.XMLHttpRequest) {
+        xhr = new XMLHttpRequest();
+    } else {
+        xhr = new ActiveXObject('Microsoft.XMLHttp');
+    }
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 &amp;&amp; xhr.status == 200) {
+            console.log(2)
+            callback(xhr.responseText);
+        }
+    }
+
+    if (method == 'GET') {
+        var date = new Date(),
+        timer = date.getTime();
+        xhr.open('GET', url + '?' + data + '&amp;timer' + timer, flag);
+        xhr.send()
+        } else if (method == 'POST') {
+        xhr.open('POST', url, flag);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send(data);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h2 id="_34、异步加载script"><a href="#_34、异步加载script" class="header-anchor">#</a> 34、异步加载script</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function loadScript(url, callback) {
+    var oscript = document.createElement('script');
+    if (oscript.readyState) { // ie8及以下版本
+        oscript.onreadystatechange = function () {
+            if (oscript.readyState === 'complete' || oscript.readyState === 'loaded') {
+                callback();
+            }
+        }
+    } else {
+        oscript.onload = function () {
+            callback()
+        };
+    }
+    oscript.src = url;
+    document.body.appendChild(oscript);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_35、cookie管理"><a href="#_35、cookie管理" class="header-anchor">#</a> 35、cookie管理</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>var cookie = {
+    set: function (name, value, time) {
+        document.cookie = name + '=' + value + '; max-age=' + time;
+        return this;
+    },
+    remove: function (name) {
+        return this.setCookie(name, '', -1);
+    },
+    get: function (name, callback) {
+        var allCookieArr = document.cookie.split('; ');
+        for (var i = 0; i &lt; allCookieArr.length; i++) {
+            var itemCookieArr = allCookieArr[i].split('=');
+            if (itemCookieArr[0] === name) {
+                return itemCookieArr[1]
+            }
+        }
+        return undefined;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="_36、实现bind-方法"><a href="#_36、实现bind-方法" class="header-anchor">#</a> 36、实现bind()方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Function.prototype.myBind = function (target) {
+    var target = target || window;
+    var _args1 = [].slice.call(arguments, 1);
+    var self = this;
+    var temp = function () {};
+    var F = function () {
+        var _args2 = [].slice.call(arguments, 0);
+        var parasArr = _args1.concat(_args2);
+        return self.apply(this instanceof temp ? this : target, parasArr)
+    }
+    temp.prototype = self.prototype;
+    F.prototype = new temp();
+    return F;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="_37、实现call-方法"><a href="#_37、实现call-方法" class="header-anchor">#</a> 37、实现call()方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Function.prototype.myCall = function () {
+    var ctx = arguments[0] || window;
+    ctx.fn = this;
+    var args = [];
+    for (var i = 1; i &lt; arguments.length; i++) {
+        args.push(arguments[i])
+    }
+    var result = ctx.fn(...args);
+    delete ctx.fn;
+    return result;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="_38、实现apply-方法"><a href="#_38、实现apply-方法" class="header-anchor">#</a> 38、实现apply()方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Function.prototype.myApply = function () {
+    var ctx = arguments[0] || window;
+    ctx.fn = this;
+    if (!arguments[1]) {
+        var result = ctx.fn();
+        delete ctx.fn;
+        return result;
+    }
+    var result = ctx.fn(...arguments[1]);
+    delete ctx.fn;
+    return result;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="_39、防抖"><a href="#_39、防抖" class="header-anchor">#</a> 39、防抖</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function debounce(handle, delay) {
+    var timer = null;
+    return function () {
+        var _self = this,
+            _args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+            handle.apply(_self, _args)
+        }, delay)
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="_40、节流"><a href="#_40、节流" class="header-anchor">#</a> 40、节流</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function throttle(handler, wait) {
+    var lastTime = 0;
+    return function (e) {
+        var nowTime = new Date().getTime();
+        if (nowTime - lastTime &gt; wait) {
+            handler.apply(this, arguments);
+            lastTime = nowTime;
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="_41、requestanimframe兼容性方法"><a href="#_41、requestanimframe兼容性方法" class="header-anchor">#</a> 41、requestAnimFrame兼容性方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>window.requestAnimFrame = (function () {
+    return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        function (callback) {
+            window.setTimeout(callback, 1000 / 60);
+        };
+})();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_42、cancelanimframe兼容性方法"><a href="#_42、cancelanimframe兼容性方法" class="header-anchor">#</a> 42、cancelAnimFrame兼容性方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>window.cancelAnimFrame = (function () {
+    return window.cancelAnimationFrame ||
+        window.webkitCancelAnimationFrame ||
+        window.mozCancelAnimationFrame ||
+        function (id) {
+            window.clearTimeout(id);
+        };
+})();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_43、jsonp底层方法"><a href="#_43、jsonp底层方法" class="header-anchor">#</a> 43、jsonp底层方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function jsonp(url, callback) {
+    var oscript = document.createElement('script');
+    if (oscript.readyState) { // ie8及以下版本
+        oscript.onreadystatechange = function () {
+            if (oscript.readyState === 'complete' || oscript.readyState === 'loaded') {
+                callback();
+            }
+        }
+    } else {
+        oscript.onload = function () {
+            callback()
+        };
+    }
+    oscript.src = url;
+    document.body.appendChild(oscript);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_44、获取url上的参数"><a href="#_44、获取url上的参数" class="header-anchor">#</a> 44、获取url上的参数</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getUrlParam(sUrl, sKey) {
+    var result = {};
+    sUrl.replace(/(\w+)=(\w+)(?=[&amp;|#])/g, function (ele, key, val) {
+        if (!result[key]) {
+            result[key] = val;
+        } else {
+            var temp = result[key];
+            result[key] = [].concat(temp, val);
+        }
+    })
+    if (!sKey) {
+        return result;
+    } else {
+        return result[sKey] || '';
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_45、格式化时间"><a href="#_45、格式化时间" class="header-anchor">#</a> 45、格式化时间</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function formatDate(t, str) {
+    var obj = {
+        yyyy: t.getFullYear(),
+        yy: (&quot;&quot; + t.getFullYear()).slice(-2),
+        M: t.getMonth() + 1,
+        MM: (&quot;0&quot; + (t.getMonth() + 1)).slice(-2),
+        d: t.getDate(),
+        dd: (&quot;0&quot; + t.getDate()).slice(-2),
+        H: t.getHours(),
+        HH: (&quot;0&quot; + t.getHours()).slice(-2),
+        h: t.getHours() % 12,
+        hh: (&quot;0&quot; + t.getHours() % 12).slice(-2),
+        m: t.getMinutes(),
+        mm: (&quot;0&quot; + t.getMinutes()).slice(-2),
+        s: t.getSeconds(),
+        ss: (&quot;0&quot; + t.getSeconds()).slice(-2),
+        w: ['日', '一', '二', '三', '四', '五', '六'][t.getDay()]
+    };
+    return str.replace(/([a-z]+)/ig, function ($1) {
+        return obj[$1]
+    });
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h2 id="_46、验证邮箱的正则表达式"><a href="#_46、验证邮箱的正则表达式" class="header-anchor">#</a> 46、验证邮箱的正则表达式</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function isAvailableEmail(sEmail) {
+    var reg = /^([\w+\.])+@\w+([.]\w+)+$/
+    return reg.test(sEmail)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="_47、函数柯里化"><a href="#_47、函数柯里化" class="header-anchor">#</a> 47、函数柯里化</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>//是把接受多个参数的函数变换成接受一个单一参数(最初函数的第一个参数)的函数，并且返回接受余下的参数且返回结果的新函数的技术
+
+function curryIt(fn) {
+    var length = fn.length,
+        args = [];
+    var result = function (arg) {
+        args.push(arg);
+        length--;
+        if (length &lt;= 0) {
+            return fn.apply(this, args);
+        } else {
+            return result;
+        }
+    }
+    return result;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_48、大数相加"><a href="#_48、大数相加" class="header-anchor">#</a> 48、大数相加</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function sumBigNumber(a, b) {
+    var res = '', //结果
+        temp = 0; //按位加的结果及进位
+    a = a.split('');
+    b = b.split('');
+    while (a.length || b.length || temp) {
+        //~~按位非 1.类型转换，转换成数字 2.~~undefined==0 
+        temp += ~~a.pop() + ~~b.pop();
+        res = (temp % 10) + res;
+        temp = temp &gt; 9;
+    }
+    return res.replace(/^0+/, '');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="_49、单例模式"><a href="#_49、单例模式" class="header-anchor">#</a> 49、单例模式</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getSingle(func) {
+    var result;
+    return function () {
+        if (!result) {
+            result = new func(arguments);
+        }
+        return result;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_50-排序-先进行某个对象属性排序-然后在此基础上进行另一个属性排序"><a href="#_50-排序-先进行某个对象属性排序-然后在此基础上进行另一个属性排序" class="header-anchor">#</a> 50. 排序，先进行某个对象属性排序，然后在此基础上进行另一个属性排序</h2> <p><a href="https://www.cnblogs.com/sjw-dmwz/p/10233459.html" target="_blank" rel="noopener noreferrer">参考链接<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ * 排序，先进行某个对象属性排序，然后在此基础上进行另一个属性排序
+ * @param array 需要排序的数组 @param compairers 多个排序规则
+ */
+function multisort(array, ...compairers) {
+	return array.sort((a, b) =&gt; {
+        for (const c of compairers) {
+                const r = c(a, b);
+                if (r !== 0) {
+                    return r;
+                }
+        }
+	});
+}
+multisort(aee,(a, b) =&gt; b.key1 - a.key2,
+    (a, b) =&gt; b.key2 - a.key2)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_51-多条件过滤"><a href="#_51-多条件过滤" class="header-anchor">#</a> 51. 多条件过滤</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function filterData (data) {
+    const filters = {
+        name:['a','b'],
+        age:[18,20]
+    } 
+    let keys = Object.keys(filters)
+    data = array.filter(item =&gt; {
+        //多重条件过滤
+        return keys.every(key =&gt; filters[key].includes(item[key]))
+    })
+    return data
+} 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="_52-去掉属性值前后空格"><a href="#_52-去掉属性值前后空格" class="header-anchor">#</a> 52.去掉属性值前后空格</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function trimHandle(data) {
+  let param = data;
+  // 数组
+  if (Object.prototype.toString.call(param) === '[object Array]') {
+    param = param.map((i) =&gt; trimHandle(i));
+  }
+  // 对象
+  if (Object.prototype.toString.call(param) === '[object Object]') {
+    Object.keys(param).forEach((item) =&gt; {
+      param[item] = trimHandle(param[item]);
+    });
+  }
+  // 字符串去前后空格
+  if (Object.prototype.toString.call(param) === '[object String]') {
+    param = param.trim();
+  }
+  return param;
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/22/2021, 3:39:30 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/常用知识点总结/2.工作中常见问题.html" class="prev">
+        2.工作中常见问题
+      </a></span> <span class="next"><a href="/Vue/基础知识.html">
+        基础知识
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.795c385b.js" defer></script><script src="/assets/js/2.4869a1c6.js" defer></script><script src="/assets/js/53.7c5411bc.js" defer></script>
+  </body>
+</html>
